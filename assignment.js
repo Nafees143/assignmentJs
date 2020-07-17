@@ -57,3 +57,23 @@ function brickCalculator (tfloor){
 }
 var input = brickCalculator (10);
 console.log(input);
+
+
+
+//"4th quistion"
+
+
+var name = [ `Shafayet`, `Monsurul`, `Tutul`, `Topu`, `Jamil`, `Islam`, `Alexandro` ];
+
+console.log(tinyFriend(name));
+
+function tinyFriend (arr){
+    var count = Infinity, pos = null;
+    for( var i = 0; i<arr.length; i++ ){
+        if ( arr[i].length<count ){
+            count = arr[i].length;
+            pos = i;
+        }
+    }
+    return arr[pos];
+}
